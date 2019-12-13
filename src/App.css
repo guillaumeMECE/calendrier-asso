@@ -1,12 +1,4 @@
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
-  background-color: #252a41 !important;
-}
-
 .App {
   text-align: center;
-  background-color: #252a41;
+  height: 100%;
 }

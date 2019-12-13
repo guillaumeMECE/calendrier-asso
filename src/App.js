@@ -1,31 +1,15 @@
 import React from 'react';
 import './App.css';
 import { withRouter } from 'react-router-dom';
-import Drawer from './components/drawer/index';
-import Hidden from '@material-ui/core/Hidden';
-import BottomNavigation from './components/bottomNavigation/index';
-import { Box } from '@material-ui/core';
-import Routes from './routes';
-
-const renderPage = () => {
-  return (<Routes />);
-}
-
+import Navbar from './components/navbar';
+import Event from './components/event';
 class App extends React.Component {
   render() {
-    const { pathname } = this.props.location;
 
     return (
       <div className="App">
-        <Hidden xsDown>
-          <Drawer child={() => renderPage()} pathname={pathname} />
-        </Hidden>
-        <Hidden smUp>
-          <Box m={2}>
-            {renderPage()}
-          </Box>
-          <BottomNavigation />
-        </Hidden>
+        <Navbar />
+        <Event />
       </div>
     );
   };
