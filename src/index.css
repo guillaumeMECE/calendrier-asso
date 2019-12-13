@@ -11,7 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-html {
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* html {
   height: 100%;
 }
 body {
@@ -20,4 +25,4 @@ body {
 }
 #root {
   height: inherit;
-}
+} */
