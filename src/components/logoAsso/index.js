@@ -7,6 +7,8 @@ import { deepOrange, deepPurple } from '@material-ui/core/colors';
 const useStyles = makeStyles(theme => ({
     root: {
         borderRadius: '50%',
+        position: 'absolute',
+        left: '50%',
         display: 'inline-block',
         width: 'auto',
         alignItems: 'center',
