@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import Avatar from '@material-ui/core/Avatar';
 
 const TimelineItem = ({ data }) => (
     <div className="timeline-item">
@@ -20,6 +21,10 @@ const TimelineItem = ({ data }) => (
             )} */}
             <span className="colorBar" />
             <span className="circle" />
+            <span className="avatar" >
+                <Avatar style={{ backgroundColor: data.color }}>{data.tag}</Avatar>
+                {/* <img src={process.env.PUBLIC_URL + 'logo_ece.png'} style={{ maxWidth: '36px', maxHeight: '36px' }} alt="Default"></img> */}
+            </span>
         </div>
     </div>
 );

@@ -1,7 +1,7 @@
 .timeline-item {
   display: flex;
   justify-content: flex-end;
-  padding-right: 30px;
+  padding-right: 40px;
   position: relative;
   margin: 10px 0;
   width: 50%;
@@ -10,7 +10,7 @@
 .timeline-item:nth-child(odd) {
   align-self: flex-end;
   justify-content: flex-start;
-  padding-left: 30px;
+  padding-left: 40px;
   padding-right: 0;
 }
 .timeline-item-content {
@@ -106,6 +106,22 @@
   height: 2px;
   z-index: 100;
 } */
+.timeline-item-content .avatar {
+  /* background-color: #000; */
+  /* border: 3px solid red; */
+  border-radius: 50%;
+  position: absolute;
+  top: calc(20% - 20px);
+  right: -60px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+}
+
+.timeline-item:nth-child(odd) .timeline-item-content .avatar {
+  right: auto;
+  left: -60px;
+}
 
 .timeline-item-content .circle {
   background-color: #fff;
